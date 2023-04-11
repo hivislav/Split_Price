@@ -14,17 +14,18 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setSupportActionBar(binding.appBarMain.toolbar)
 
         val toggle = ActionBarDrawerToggle(
-            this,
-            binding.drawerLayout,
-            binding.appBarMain.toolbar,
-            R.string.navigation_drawer_open,
-            R.string.navigation_drawer_close
+                this,
+                binding.drawerLayout,
+                binding.appBarMain.toolbar,
+                R.string.navigation_drawer_open,
+                R.string.navigation_drawer_close
         )
         binding.drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
