@@ -1,4 +1,4 @@
-package com.deverline.splitprice.presentation.main
+package com.deverline.splitprice.main.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.commit
 import com.deverline.splitprice.R
 import com.deverline.splitprice.databinding.ActivityMainBinding
-import com.deverline.splitprice.presentation.home.HomeFragment
+import com.deverline.splitprice.home.presentation.HomeFragment
 
 class MainActivity : AppCompatActivity() {
 

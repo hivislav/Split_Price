@@ -1,4 +1,4 @@
-package com.deverline.splitprice.presentation.home
+package com.deverline.splitprice.home.presentation
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
