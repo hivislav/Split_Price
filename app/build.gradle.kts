@@ -3,6 +3,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
 }
 
 android {
@@ -46,6 +47,14 @@ dependencies {
     implementation(Dependencies.androidxLifecycleLivedata)
     implementation(Dependencies.androidxLifecycleViewModel)
     implementation(Dependencies.androidxNavigationFragment)
+
+    implementation(Dependencies.room)
+    implementation(Dependencies.roomKtx)
+    kapt(Dependencies.roomKapt)
+
+    implementation(Dependencies.dagger)
+    kapt(Dependencies.daggerKapt)
+
     testImplementation(Dependencies.junit)
     androidTestImplementation(Dependencies.androidxJunit)
     androidTestImplementation(Dependencies.androidxEspresso)

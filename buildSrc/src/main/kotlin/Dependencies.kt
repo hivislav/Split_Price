@@ -3,6 +3,8 @@ object Dependencies {
     object Versions {
         const val kotlin = "1.8.20"
         const val gradle = "7.4.2"
+        const val room = "2.5.1"
+        const val dagger = "2.45"
     }
 
     object Plugin {
@@ -28,4 +30,13 @@ object Dependencies {
     const val junit = "junit:junit:4.13.2"
     const val androidxJunit = "androidx.test.ext:junit:1.1.5"
     const val androidxEspresso = "androidx.test.espresso:espresso-core:3.5.1"
+
+    //Room
+    const val room = "androidx.room:room-runtime:${Versions.room}"
+    const val roomKtx = "androidx.room:room-ktx:${Versions.room}"
+    const val roomKapt = "androidx.room:room-compiler:${Versions.room}"
+
+    //Dagger2
+    const val dagger = "com.google.dagger:dagger-android:${Versions.dagger}"
+    const val daggerKapt = "com.google.dagger:dagger-android-processor:${Versions.dagger}"
 }
